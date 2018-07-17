@@ -1,0 +1,132 @@
+/*** BASE ***/
+body {
+	font-family: 'Montserrat';
+	background: #FCFCFC;
+}
+
+/*** GRID ***/
+.full-width {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.half-width {
+	width: 600px;
+	float: left;
+}
+
+/*** need a height so that side borders reach all the way top to bottom between top/bottom borders of .full-width div, otherwise #contact div is too short and side border doesn't reach to bottom ***/
+.third-width {
+	width: 359px;
+	height: 205px;
+	float: left;
+}
+
+.third-width h4 {
+	font-size: 12px;
+	line-height: 25px;
+}
+
+/*** HEADER ***/
+h1 {
+	font-size: 30px;
+}
+
+#highlight-header, #highlight-footer {
+	color: #77a466;
+}
+
+nav ul {
+	list-style: none;
+	text-align: right;
+	margin-top: 30px;
+}
+
+nav ul li {
+	display: inline-block;
+	padding-left: 25px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #77a466;
+}
+
+header img {
+	border-top: 5px solid #77a466;
+	border-bottom: 5px solid #77a466;
+}
+
+/*** MAIN ***/
+h4 {
+	font-size: 12px;
+	line-height: 25px;
+	text-transform: uppercase;
+}
+
+main p {
+	font-size: 16px;
+	color: #000000;
+}
+
+/*** ABOUT ***/
+#about .full-width {
+	border-bottom: 1px solid #dedbdc;
+}
+
+h2 {
+	color: #77a466;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+#about p {
+		line-height: 25px;
+}
+
+/*** DETAILS ***/
+/*** div containing the .third-width divs was collapsing since the .third-divs are all floated; added overflow: auto to parent div (.full-width) to stop it from collapsing; adding it to the <section> w/#details doesn't work because it's not the parent div of the floated .third-divs ***/
+#details .full-width {
+	overflow: auto;
+	border-top: 1px solid #dedbdc;
+	border-bottom: 1px solid #dedbdc;
+}
+
+/*** MENU ***/
+#menu p {
+	color: #77a466;
+}
+
+#reviews, #contact {
+	border-left: 1px solid #dedbdc;
+	padding: 0 0 0 45px;
+}
+
+/*** REVIEWS ***/
+#reviews p {
+	line-height: 21px;
+	padding-right: 20px;
+}
+
+/*** CONTACT ***/
+#contact p {
+	line-height: 24px;
+}
+
+/*** FOOTER ***/
+footer {
+	clear: both;
+}
+
+h3 {
+	font-size: 16px;
+	line-height: 23px;
+	text-align: center;
+	padding: 20px 0;
+	text-transform: uppercase;
+}
+
+#highlight-footer {
+	font-family: 'Pinyon Script';
+	text-transform: lowercase;
+}
